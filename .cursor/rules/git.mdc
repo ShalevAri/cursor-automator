@@ -26,14 +26,13 @@ Commit Message Prefixes:
 
 ## Message Rules
 
-- Use lowercase for commit messages
-- Keep the summary line concise
-- Include description for non-obvious changes
+- Only use lowercase for commit messages
+- Keep it concise
 - Reference issue numbers when applicable
 
 ## Example commit messages
 
-- [Cursor] feat(home): add FAQ section
+- [Cursor] feat(home): add faq section
 - [Cursor] feat(footer): add copyright info
 - [Cursor] fix(navbar): center buttons
 - [Cursor] style(*): format all code using prettier

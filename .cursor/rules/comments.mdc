@@ -7,5 +7,4 @@ alwaysApply: true
 ## Comments
 
 - When creating code, never write unnecessary comments
-- When writing comments for no reason, the code just gets clogged up with noise from the comments, and they are not necessary
-- If you do need to create a comment, explain *why* something is being done when there is complex logic
+- If you do need to create a comment, explain *why* something is being done when there is complex logic, rather than simply saying what is being done
