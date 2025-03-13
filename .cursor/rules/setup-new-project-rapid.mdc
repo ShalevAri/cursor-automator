@@ -1,0 +1,28 @@
+---
+description: Install or setup or create a new project with the Rapid stack
+globs: 
+alwaysApply: false
+---
+When I ask to setup a new project or install nextjs I want you to run the following instructions sequentially.
+First check for the presence of a package.json file (or any file/data for that manner) and do not run this if they are present.
+Instead, if there are any files/data present, notify me and confirm with me that I really want to do this.
+If I approve, overwrite everything and continue as usual.
+If I do not approve, cancel and do nothing.
+
+## Step 1
+
+```bash
+git clone https://github.com/ShalevAri/rapid-stack.git .
+```
+
+## Step 2
+
+```bash
+pnpm i
+```
+
+## Step 3
+
+```bash
+pnpm dev
+```

@@ -1,0 +1,11 @@
+---
+description: How to work with tests
+globs: *.spec.ts, *.spec.tsx, *.test.ts, *.test.tsx, *.spec.js, *.test.js
+alwaysApply: false
+---
+
+## Testing
+- Write unit tests for utilities and components
+- Implement E2E tests for critical flows
+- Test across different Chrome versions
+- Test memory usage and performance
