@@ -12,13 +12,25 @@ Please note that this is intended to be used inside of Cursor, and will probably
 
 ## How Can I Use It?
 
-Download the `setup.sh` script into the directory of your project using the following command:
+Simply follow these steps:
+
+1. Download the script
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/ShalevAri/cursor-automator/main/setup.sh | bash
+curl -sSL -o setup.sh https://raw.githubusercontent.com/ShalevAri/cursor-automator/main/setup.sh
 ```
 
-Then, run the script and follow the prompts.
+2. Make the script executable
+
+```bash
+chmod +x setup.sh
+```
+
+3. Run the script
+
+```bash
+./setup.sh # MacOS/Linux
+```
 
 ## Extra Rules
 
