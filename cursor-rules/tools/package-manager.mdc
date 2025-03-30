@@ -1,0 +1,9 @@
+---
+description: My package manager
+globs: 
+alwaysApply: true
+---
+
+## Package Manager
+
+- I use pnpm for my package manager (unless I tell you otherwise)

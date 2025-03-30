@@ -1,0 +1,19 @@
+---
+description: This is the project's tech stack
+globs: 
+alwaysApply: true
+---
+## Tech Stack
+
+- React (UI library)
+- Next.js (React framework)
+- Tailwind CSS (styling)
+- TypeScript (type-safe JavaScript)
+- Drizzle (ORM)
+- PostgreSQL (relational database)
+- Docker (containerization)
+- Vercel (deployment platform)
+- Snyk (fix vulnerabilities)
+- Sentry (error tracking)
+- CodeRabbit (AI code assistant)
+- PostHog (analytics)

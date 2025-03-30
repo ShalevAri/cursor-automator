@@ -1,0 +1,12 @@
+---
+description: Security
+globs: 
+alwaysApply: true
+---
+
+## Security rules
+
+- Implement Content Security Policy
+- Sanitize user inputs
+- Handle sensitive data properly
+- Implement proper CORS handling

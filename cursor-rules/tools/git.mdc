@@ -1,0 +1,41 @@
+---
+description: How to use Git
+globs: 
+alwaysApply: false
+---
+
+## Git Instructions
+
+- Always include "[Cursor] " in the commit message and PR title.
+- Keep the messages short, concise and descriptive.
+- The only non-letter characters allowed are parentheses ("()"), colons (":"), and hyphens ("-").
+- Always use conventional commit messages.
+- If the code change applies to the entire codebase, use "*" in the parenthesis.
+
+## Usage
+
+Commit Message Prefixes:
+- "fix:" for bug fixes
+- "feat:" for new features
+- "perf:" for performance improvements
+- "docs:" for documentation changes
+- "style:" for formatting changes
+- "refactor:" for code refactoring
+- "test:" for adding missing tests
+- "chore:" for maintenance tasks
+
+## Message Rules
+
+- Only use lowercase for commit messages
+- Keep it concise
+- Reference issue numbers when applicable
+
+## Example commit messages
+
+- [Cursor] feat(home): add faq section
+- [Cursor] feat(footer): add copyright info
+- [Cursor] fix(navbar): center buttons
+- [Cursor] style(*): format all code using prettier
+- [Cursor] docs(readme): add readme
+- [Cursor] chore(deps): add jotai
+- [Cursor] chore(deps): bump version

@@ -1,0 +1,21 @@
+---
+description: How to setup Shadcn correctly
+globs: 
+alwaysApply: false
+---
+
+## Setting up Shadcn
+
+To set up shadcn, run the following commands:
+
+## Init Shadcn
+```bash
+pnpm dlx shadcn@latest init
+```
+
+## Add all components
+```bash
+pnpm dlx shadcn@latest add
+```
+
+- Make sure to use the equivalent command for other package managers (such as npm, yarn or bun) if the user doesn't use pnpm
