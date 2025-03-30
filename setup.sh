@@ -13,8 +13,8 @@ get_yes_no() {
     done
 }
 
-if ! command -v git &> /dev/null; then
-    echo "Error: git is not installed"
+if ! command -v curl &> /dev/null; then
+    echo "Error: curl is not installed"
     exit 1
 fi
 
@@ -55,11 +55,27 @@ fi
 mkdir -p ".cursor/rules" || { echo "Error creating directories"; exit 1; }
 
 for component in "${selected[@]}"; do
-    echo "Cloning $component..."
-    if ! git clone "https://github.com/ShalevAri/cursor-automator/tree/main/cursor-rules/$component" ".cursor/rules/$component" 2>/dev/null; then
-        echo "Error cloning $component"
+    echo "Downloading $component rules..."
+    component_dir=".cursor/rules/$component"
+    mkdir -p "$component_dir"
+    
+    repo_url="https://api.github.com/repos/ShalevAri/cursor-automator/contents/cursor-rules/$component"
+    files=$(curl -s "$repo_url")
+    
+    if ! echo "$files" | grep -q "name"; then
+        echo "Error: Failed to fetch file list for $component"
         exit 1
     fi
+    
+    file_names=$(echo "$files" | grep -o '"name":"[^"]*"' | sed 's/"name":"//g' | sed 's/"//g')
+    
+    for file in $file_names; do
+        download_url="https://raw.githubusercontent.com/ShalevAri/cursor-automator/main/cursor-rules/$component/$file"
+        echo "  - Downloading $file"
+        if ! curl -s "$download_url" -o "$component_dir/$file"; then
+            echo "Error downloading $file"
+        fi
+    done
 done
 
 if [[ " ${selected[@]} " =~ "helper" ]]; then
