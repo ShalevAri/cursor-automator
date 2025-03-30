@@ -6,6 +6,10 @@ Cursor Automator is a repository that contains many custom rules for Cursor to m
 
 It covers edge cases, improves the AI's ability to understand code, lets it think ahead, and more.
 
+## Usage Note
+
+Please note that this is intended to be used inside of Cursor, and will probably not work inside other IDEs.
+
 ## How Can I Use It?
 
 Download the `setup.sh` script into the directory of your project using the following command:
